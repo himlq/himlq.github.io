@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HackMapVN</title>
+    <title>danhthai</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="NTDShare" />
@@ -37,23 +37,23 @@
             </div>
         </nav>
         <div class="khung-avt">
-            <img class="avatar" src="/uploads/intro/1777981634_z7794052116676_829840da0110c3a0c22effe752e16a45.jpg" alt="ảnh đại diện" fetchpriority="high">
+            <img class="avatar" src="https://i.ibb.co/nMwSPgbj/IMG-0031.jpg" alt="ảnh đại diện" fetchpriority="high">
             <img class="frame" src="https://bio.ntdsharehax.shop/uploads/intro/1777981634_khungavt.png" alt="khung ảnh đại diện" fetchpriority="high">
         </div>
         <h2 class="iam">Hi, i am</h2>
-        <h1>HackMapVN<img class="verify" src="https://bio.ntdsharehax.shop/assets/img/verify.png" alt="verify"></h1>
+        <h1>danhthai<img class="verify" src="https://bio.ntdsharehax.shop/assets/img/verify.png" alt="verify"></h1>
         <div class="headline">
             and I'm a <span id="typed-text" class="gradient-text"></span>
         </div>
         <div class="socials">
                             <a href="https://www.youtube.com/@hackmapvn" aria-label="mạng xã hội" class="social-box" target="_blank">
-                    <img src="/uploads/social/1777981744_1763894844_ytb.png" alt="Social">
+                    <img src="https://bio.ntdsharehax.shop/uploads/social/1777981744_1763894844_ytb.png" alt="Social">
                 </a>
                             <a href="https://t.me/hackmapvn" aria-label="mạng xã hội" class="social-box" target="_blank">
                     <img src="https://i.ibb.co/BHPtDcxB/IMG-0046.png" alt="Social">
                 </a>
-                            <a href="https://tiktok.com/hackmaplienquanaov" aria-label="mạng xã hội" class="social-box" target="_blank">
-                    <img src="https://i.ibb.co/PZLLcXJn/IMG-0048.avif" alt="Social">
+                            <a href="https://tiktok.com/hackmapsang" aria-label="mạng xã hội" class="social-box" target="_blank">
+                    <img src="https://i.ibb.co/wr8gjBSZ/IMG-0051.avif" alt="Social">
                 </a>
                     </div>
 
@@ -108,5 +108,18 @@
     </main>
     <script src="https://bio.ntdsharehax.shop/assets/js/css.js?v=1777269596"></script>
     <script src="https://bio.ntdsharehax.shop/assets/js/box.js?v=1779179221"></script>
+    <audio id="myAudio" loop>
+  <source src="nhactimi.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // Chờ người dùng tương tác với trang web rồi mới phát nhạc
+  document.addEventListener('click', function() {
+    var audio = document.getElementById("myAudio");
+    audio.play().catch(function(error) {
+      console.log("Trình duyệt chặn tự động phát cho đến khi có tương tác.");
+    });
+  }, { once: true }); // { once: true } đảm bảo code này chỉ chạy 1 lần duy nhất ở lần click đầu tiên
+</script>
 </body>
 </html>
