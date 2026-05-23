@@ -110,16 +110,11 @@
     <script src="https://bio.ntdsharehax.shop/assets/js/box.js?v=1779179221"></script>
     <audio id="myAudio" loop>
   <source src="ten-file-nhac-cua-ban.mp3" type="audio/mpeg">
+
+<audio id="myAudio" autoplay loop>
+    <source src="nhactimi.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ thẻ audio.
 </audio>
 
-<script>
-  // Chờ người dùng tương tác với trang web rồi mới phát nhạc
-  document.addEventListener('click', function() {
-    var audio = document.getElementById("myAudio");
-    audio.play().catch(function(error) {
-      console.log("Trình duyệt chặn tự động phát cho đến khi có tương tác.");
-    });
-  }, { once: true }); // { once: true } đảm bảo code này chỉ chạy 1 lần duy nhất ở lần click đầu tiên
-</script>
 </body>
 </html>
