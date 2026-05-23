@@ -109,12 +109,24 @@
     <script src="https://bio.ntdsharehax.shop/assets/js/css.js?v=1777269596"></script>
     <script src="https://bio.ntdsharehax.shop/assets/js/box.js?v=1779179221"></script>
     <audio id="myAudio" loop>
-  <source src="ten-file-nhac-cua-ban.mp3" type="audio/mpeg">
+  <source src="nhactimi.mp3" type="audio/mpeg">
 
-<audio id="myAudio" autoplay loop>
-    <source src="nhactimi.mp3" type="audio/mpeg">
-    Trình duyệt của bạn không hỗ trợ thẻ audio.
-</audio>
+    <audio id="bg-music" loop>
+        <source src="ten-file-nhac-cua-ban.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('bg-music');
+            audio.play().catch(function(error) {
+                console.log("Chờ người dùng tương tác để phát nhạc...");
+            });
+            document.removeEventListener('click', playMusic);
+            document.removeEventListener('touchstart', playMusic);
+        }
+        document.addEventListener('click', playMusic);
+        document.addEventListener('touchstart', playMusic);
+    </script>
 
 </body>
 </html>
